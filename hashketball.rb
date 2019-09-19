@@ -173,7 +173,6 @@ def players
 end
 
 def big_shoe_rebounds
-  binding.pry
   big_shoe_player = players.max_by{|player, stats| stats.fetch(:shoe)}[1]
   big_shoe_player[:rebounds]
 end
