@@ -118,7 +118,7 @@ def game_hash
   }
 end
 
-def find_player_stats(players_name)
+def player_stats(players_name)
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
       if data.include?(players_name)
