@@ -172,7 +172,7 @@ def players
   game_hash[:home][:players].merge(game_hash[:away][:players])
 end
 
-def player_biggest_shoe_size
+def big_shoe_rebounds
   binding.pry
   players.max_by{|player, stats| stats.fetch(:shoe)}[1]
 end
