@@ -169,5 +169,6 @@ def player_numbers(team_name)
 end
 
 def player_biggest_shoe_size
+  binding.pry
   players.max_by{|player, stats| stats.fetch(:shoe)}[1]
 end
