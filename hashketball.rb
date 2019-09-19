@@ -133,7 +133,7 @@ def num_points_scored(players_name)
 end
 
 def shoe_size(players_name)
-  find_player_stats(players_name)[:shoe]
+  player_stats(players_name)[:shoe]
 end
 
 def find_team(team_name)
